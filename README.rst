@@ -14,8 +14,12 @@ Installation
 
 #. Install or add ``django-category`` to your Python path.
 
-#. Add ``category`` to your ``INSTALLED_APPS`` setting.
-
+#. Add ``category`` and  to your ``INSTALLED_APPS`` setting.
+#. Add ``django.contrib.sites`` to your ``INSTALLED_APPS`` setting, see https://docs.djangoproject.com/en/2.0/ref/contrib/sites/
+#. Define a SITE_ID setting:
+   
+    SITE_ID = 1
+   
 #. Optional: ``django-object-tools`` provides a category tree view. See https://github.com/praekelt/django-object-tools
    for installation instructions.
 

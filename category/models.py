@@ -32,7 +32,7 @@ class Category(models.Model):
     sites = models.ManyToManyField(
         "sites.Site",
         blank=True,
-        null=True,
+        #null=True,
         help_text="Limits category scope to selected sites.",
     )
 
@@ -91,7 +91,7 @@ class Tag(models.Model):
     categories = models.ManyToManyField(
         "category.Category",
         blank=True,
-        null=True,
+        #null=True,
         help_text="Categories to which this tag belongs."
     )
 
